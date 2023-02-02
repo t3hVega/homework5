@@ -44,13 +44,16 @@ public class Main {
     }
     public static void task4() {
         System.out.println("Задача 4:");
-        int deliveryDistance = 100;
+        int deliveryDays = 1;
+        int deliveryDistance = 60;
         if (deliveryDistance <= 20) {
-            System.out.println("Доставка займет один день");
+            System.out.println("Дней требуется для доставки - " + deliveryDays);
         } else if (deliveryDistance > 20 && deliveryDistance <=60) {
-            System.out.println("Доставка займет два дня");
+            deliveryDays = deliveryDays + 1;
+            System.out.println("Дней требуется для доставки - " + deliveryDays);
         } else if (deliveryDistance > 60 && deliveryDistance <=100) {
-            System.out.println("Доставка займет три дня");
+            deliveryDays = deliveryDays + 2;
+            System.out.println("Дней требуется для доставки - " + deliveryDays);
         } else System.out.println("Свыше 100 км доставки нет");
 
     }
