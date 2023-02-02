@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        System.out.println("ДЗ сделано");
     }
     public static void task1() {
         System.out.println("Задача 1:");
